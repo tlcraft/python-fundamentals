@@ -1,5 +1,5 @@
-from src.example import func
+from src.example import add_one
 
 
-def test_answer():
-    assert func(3) == 4
+def test_add_one():
+    assert add_one(3) == 4

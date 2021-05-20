@@ -1,4 +1,5 @@
-from src.services.stringService import append
+from src.services.string_service import StringService
 
-def test_append():
-    assert append("Hello ", "World") == "Hello World"
+def test_should_append_hello_world():
+    service = StringService()
+    assert service.append("Hello ", "World") == "Hello World"

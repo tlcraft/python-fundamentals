@@ -1,4 +1,4 @@
-from example import Example
+from example_module.example_class import Example
 from services.string_service import StringService
 
 def main():

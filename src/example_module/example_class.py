@@ -1,7 +1,7 @@
-from services import string_service
+from services.string_service import StringService
 
 class Example:
-    def __init__(self, stringService: string_service.StringService):
+    def __init__(self, stringService: StringService):
         self.stringService = stringService
 
     def add_one(self, x: int) -> int:

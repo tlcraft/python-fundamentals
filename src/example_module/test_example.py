@@ -1,8 +1,8 @@
-from example_module import example_class
-from services import string_service
+from example_module.example_class import Example
+from services.string_service import StringService
 
 def test_should_add_one():
-    service = string_service.StringService()
-    example = example_class.Example(service)
+    service = StringService()
+    example = Example(service)
     assert example.add_one(3) == 4
 

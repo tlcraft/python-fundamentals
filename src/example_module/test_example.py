@@ -1,6 +1,7 @@
 from example_module.example_class import Example
 from unittest import TestCase, mock
 
+# Mock where the component is used, not where it's defined
 @mock.patch('example_module.example_class.StringService', autospec=True)
 class ExampleTestCase(TestCase):
     def test_should_add_one(self, mock_service):
